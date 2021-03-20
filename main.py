@@ -16,10 +16,22 @@ def getWeatherInfo(canvas):
     calosc = stats + '\n' + 'Temperatura :' + str(temp) + '\n' + 'Wilgotnosc :' + str(hum)
     label1.config(text = calosc)
     label2.config(text = '')
+    # result = {
+    #     'a': lambda x: x * 5,
+    #     'b': lambda x: x + 7,
+    #     'c': lambda x: x - 2
+    # }[dane_json['main']](x)
 
 canvas = tk.Tk()
 # ToDo Case statement background zaleznie od weather main (stats)
+
 #ToDo Error Handling
+# def BackgroundChoice(weatherStuff):
+#
+#     wynik = 1
+#     return wynik
+
+
 backgroundZdjecie = PhotoImage(file = "E:\Python Projekty\Pogoda\Chmury.png")
 background_label = Label(canvas, image=backgroundZdjecie)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
